@@ -7,3 +7,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 .store{padding:0;background:transparent;border:0;border-radius:10px}.store img{width:164px;height:auto}
+
+.error-page{min-height:60vh;padding-block:80px}.error-page>p:not(.eyebrow){max-width:560px}.error-page h1{margin-top:0}

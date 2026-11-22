@@ -24,3 +24,11 @@ Support and privacy pages reproduce the app repository's `docs/app-store/support
 The app and App Store currently link to `https://cybernetks.be/projects/operator/support/` and `https://cybernetks.be/projects/operator/privacy/`. Keep those pages working. Once this site is live, update app/App Store URLs deliberately, and redirect the older addresses where the Cybernetks hosting supports it. GitHub Pages does not provide configurable server-side redirects.
 
 Assets are copied from the Operator app's approved brand source and launch screenshots. Screenshot content remains in its captured light appearance when the site uses dark mode.
+
+## Search and missing pages
+
+All public content is rendered in HTML without requiring JavaScript. Each page has a unique title, description and HTTPS canonical URL. The sitemap lists the homepage, support and privacy pages. Open Graph metadata and PNG icons support sharing previews. Homepage JSON-LD describes the website and app; no ratings or reviews are invented, so Google software-app rich results are not promised.
+
+`404.html` uses root-relative links so assets and navigation work at arbitrary missing paths. It is marked `noindex`, has no canonical to the homepage, and is omitted from the sitemap. GitHub Pages serves it with HTTP 404. The custom deployment workflow includes it as well as branch-based publishing.
+
+After launch, add the site to Google Search Console and submit `https://operator.cybernetks.be/sitemap.xml` to monitor indexing. This requires access to the site owner's Google account. Search ranking and indexing are not guaranteed by metadata alone.
