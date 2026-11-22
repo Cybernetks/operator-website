@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://operator.cybernetks.be/sitemap.xml
